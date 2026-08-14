@@ -1,0 +1,30 @@
+[project]
+name = "notebooks"
+version = "0.1.0"
+description = "Workshop notebooks for the IAI session "AI for Actuaries — From Foundations to AI Agents" (25 August 2026, Delhi)"
+readme = "README.md"
+authors = [
+    { name = "KasyapSatya", email = "kunapulikasyap@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "agno>=2.9.0",
+    "google-auth>=2.56.3",
+    "google-genai>=2.18.1",
+    "ipywidgets>=8.1.8",
+    "matplotlib>=3.11.1",
+    "numpy>=2.3.5",
+    "pandas>=3.0.5",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.9.0",
+    "shap>=0.52.0",
+    "statsmodels>=0.14.6",
+    "xgboost>=3.4.0",
+]
+
+[project.scripts]
+notebooks = "notebooks:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
